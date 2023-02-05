@@ -1,0 +1,51 @@
+{
+  "name": "apibase",
+  "version": "1.0.0",
+  "description": "Base para proyectos API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
+    "eslint": "eslint",
+    "migrations:generate": "sequelize-cli migration:generate --name",
+    "migrations:run": "sequelize-cli db:migrate",
+    "migrations:revert": "sequelize-cli db:migrate:undo",
+    "migrations:delete": "sequelize-cli db:migrate:undo:all",
+    "docker:run": "docker-compose --env-file=.env up -d "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Choco1125/apibase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Choco1125/apibase/issues"
+  },
+  "homepage": "https://github.com/Choco1125/apibase#readme",
+   "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.1.0",
+    "nodemailer": "^6.9.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.6.0"
+  }
+}
