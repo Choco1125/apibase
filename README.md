@@ -1,6 +1,6 @@
 # apibase
 
-Base para proyectos API
+Template to restful api projects
 
 ## Installation
 
